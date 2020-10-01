@@ -1,0 +1,31 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 100%;
+}
+header {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-bottom: solid 2px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-container {
+    padding-left: 2vw;
+    padding-top: 2vw;
+}
+.new-project-button {
+     border: none;
+     background-color: rgb(150, 212, 212);
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+     font-weight: bold;
+     height: 2.4em;
+     font-size: 1em;
+     
+}
