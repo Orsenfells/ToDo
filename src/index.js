@@ -1,2 +1,2 @@
-import sayHi from './sayHi.js'
-  
+import domController from './modal';
+

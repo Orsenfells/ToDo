@@ -3,19 +3,57 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>ToDo</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <main>
             <header>
                 <h1>ToDo</h1>
-                <button class="new-project-button">+ New Project</button>
+                <button class="new-project-button button" id="new-project-btn">+ New Project</button>
             </header>
-            <div class="content-container">
-                <label >
-                    <input type="checkbox">
-                </label>
+            <div class="content-container" id="projects-container">
+                <!-- <div class="checkbox">
+                    <input type="checkbox" id="checkbox_1">
+                    <label for="checkbox_1">Pure CSS checkbox</label>
+                </div> -->
+                <div class="project-outer">
+                    <div class="project-base">
+                        <div>&#43; New Project</div>
+                        <div>Due</div>
+                        <div>Priority: High</div>
+                    </div>
+                    <div class="project-base-child"><div>Description</div><div>&#43;</div></div>
+                    <div class="project-base-child"><div>Notes</div><div>&#43;</div></div>
+                    <div class="project-base-child"><div>Checklist</div><div>&#43;</div></div>
+
+                </div>
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Add Project</h3>
+                    </div>
+                    <form >
+                        <fieldset >
+                            <label for="project">Project</label>
+                            <input type="text" id="project" required>
+                            
+                            <label for="description">Description</label>
+                            <input type="text" id="description">
+
+                            <label for="duedate">Due Date</label>
+                            <input type="date" id="duedate">
+
+                            <label for="priority">Priority</label>
+                            <input type="text" id="priority">
+                        </fieldset>           
+                    </form>
+                    <div>
+                        <button type="button" class="button form-button" id="close-btn">Cancel</button>
+                        <button type="button" class="button form-button" id="submitButton">Add</button>
+                    </div>
+                </div>
             </div>
             <script src="main.js"></script>
         </main>
