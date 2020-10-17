@@ -1,4 +1,4 @@
-import newProject from './button'
+import NewProject from './button'
 const domController = (() => {
     const modalBtn = document.querySelector("#new-project-btn");
     const modal = document.querySelector(".modal");
@@ -7,7 +7,8 @@ const domController = (() => {
     const description = document.getElementById('description');
     const due = document.getElementById('duedate');
     const priority = document.getElementById('priority');
-    console.log(newProject(project.value, description.value, due.value, priority.value));
+    const submitButton = document.getElementById('submitButton');
+    const contentContainer = document.getElementById('projects-container');
     const newProjectModal = (() => {
         let showModal = () => {
             modal.style.display = "flex";
@@ -16,7 +17,11 @@ const domController = (() => {
             modal.style.display = "none";
         }
         modalBtn.addEventListener('click', showModal);
-    
+        
+        submitButton.addEventListener('click', function() {
+            contentContainer.appendChild(NewProject(project.value, description.value, due.value, priority.value))
+            modal.style.display = "none";
+        })
         closeBtn.addEventListener('click', hideModal);
         
         window.onclick = function(e) {

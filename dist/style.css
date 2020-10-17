@@ -22,9 +22,9 @@ form fieldset {
     display: flex;
     flex-direction: column;
 }
-.project-outer {
+/* .project-outer {
 
-}
+} */
 .project-base {
     display: flex;
     justify-content: space-between;
