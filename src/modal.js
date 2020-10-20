@@ -19,7 +19,7 @@ const domController = (() => {
         modalBtn.addEventListener('click', showModal);
         
         submitButton.addEventListener('click', function() {
-            contentContainer.appendChild(NewProject(project.value, description.value, due.value, priority.value))
+            contentContainer.appendChild(NewProject(project.value, description.value, due.value, priority.value, notes.value))
             modal.style.display = "none";
         })
         closeBtn.addEventListener('click', hideModal);
@@ -30,6 +30,7 @@ const domController = (() => {
             }
         }
     })()
+    contentContainer.appendChild(NewProject('Finish ToDo', "JS practice", 'whenever Baby', 'Priority: High', "Notes"));
 })()
 
 

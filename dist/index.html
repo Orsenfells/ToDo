@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ToDo</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">  
+        <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
     </head>
     <body>
         <main>
@@ -16,19 +18,7 @@
                 <!-- <div class="checkbox">
                     <input type="checkbox" id="checkbox_1">
                     <label for="checkbox_1">Pure CSS checkbox</label>
-                </div> -->
-                <div class="project-outer">
-                    <div class="project-base">
-                        <div>&#43; New Project</div>
-                        <div>Due</div>
-                        <div>Priority: High</div>
-                    </div>
-                    <div class="project-base-child"><div>Description</div><div>&#43;</div></div>
-                    <div class="project-base-child"><div>Notes</div><div>&#43;</div></div>
-                    <div class="project-base-child"><div>Checklist</div><div>&#43;</div></div>
-
-                </div>
-            </div>
+                </div> -->         
             <div class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -47,15 +37,19 @@
 
                             <label for="priority">Priority</label>
                             <input type="text" id="priority">
+                            
+                            <label for="notes">Notes</label>
+                            <textarea id="notes" name="notes"></textarea>
                         </fieldset>           
                     </form>
                     <div>
                         <button type="button" class="button form-button" id="close-btn">Cancel</button>
-                        <button type="button" class="button form-button" id="submitButton">Add</button>
+                        <button type="submit" class="button form-button" id="submitButton">Add</button>
                     </div>
                 </div>
             </div>
             <script src="main.js"></script>
+            <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         </main>
     </body>
 </html>

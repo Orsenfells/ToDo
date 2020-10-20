@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-
+    font-family: 'Oswald', sans-serif;
 }
 main {
     width: 100%;
@@ -22,24 +22,47 @@ form fieldset {
     display: flex;
     flex-direction: column;
 }
-/* .project-outer {
-
-} */
+.child-flex {
+    display: flex;
+    justify-content: space-between;
+}
 .project-base {
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
+    align-items: center;
+    font-weight: bold;
 }
-.project-base-child {
+.removeToDo {
+    color: red;
+    font-family: initial;
+    cursor: pointer;
+}
+.minimizeExpand {
+    font-family: initial;
+    font-size: 2em;
+    width: 26px;
+    cursor: pointer;
+}
+.project-child-container {
     border: 1px solid black;
-    padding: 2px;
+
     margin-left: 30px;
     margin-right: 3px;
     border-top: none;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+}
+.project-child {
     display: flex;
     justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    /* border: 1px solid black;
+    border-top: none */
 }
 .modal {
     display: none;
