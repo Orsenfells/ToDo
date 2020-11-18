@@ -72,7 +72,7 @@ const NewProject = (projectName, description, due, priority, notes) => {
         }   else hideChildren();
         
     })
-    return projOuter
+    return projOuter 
       
 }
 export default NewProject
